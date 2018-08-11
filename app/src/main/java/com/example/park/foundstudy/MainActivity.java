@@ -21,6 +21,8 @@ public class MainActivity extends AppCompatActivity {
         Toast.makeText(this, "123213123123", Toast.LENGTH_SHORT).show();
         Toast.makeText(this, "123213123123", Toast.LENGTH_SHORT).show();
         Toast.makeText(this, "123213123123", Toast.LENGTH_SHORT).show();
+        Toast.makeText(this, "123213123123", Toast.LENGTH_SHORT).show();
+        Toast.makeText(this, "123213123123", Toast.LENGTH_SHORT).show();
 
 
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
