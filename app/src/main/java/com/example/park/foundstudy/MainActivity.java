@@ -18,7 +18,10 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         // project Test code
-        Toast.makeText(this, "123213", Toast.LENGTH_SHORT).show();
+        Toast.makeText(this, "123213123123", Toast.LENGTH_SHORT).show();
+        Toast.makeText(this, "123213123123", Toast.LENGTH_SHORT).show();
+        Toast.makeText(this, "123213123123", Toast.LENGTH_SHORT).show();
+
 
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
