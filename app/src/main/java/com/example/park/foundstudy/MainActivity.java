@@ -35,9 +35,6 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Toast.makeText(MainActivity.this, "수진아 사랑해", Toast.LENGTH_SHORT).show();
-                Intent intent = new Intent(Intent.ACTION_DIAL, Uri.parse("tel:010-6263-9107"));
-                startActivity(intent);
-
             }
         });
     }
