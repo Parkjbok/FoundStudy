@@ -1,6 +1,7 @@
 package com.example.park.foundstudy.Activity;
 
 import android.app.Fragment;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.TabLayout;
@@ -15,6 +16,7 @@ import android.widget.Toast;
 
 import com.example.park.foundstudy.Adapter.TabPagerAdapter;
 import com.example.park.foundstudy.R;
+import com.example.park.foundstudy.tabFragment.StudyPlusActivity;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -67,6 +69,15 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Toast.makeText(MainActivity.this, "수진아 사랑해!!!!!", Toast.LENGTH_SHORT).show();
+
+                //Study Plus Activity로 가는 Intent 생성하기
+                Intent intent = new Intent(getApplicationContext(), StudyPlusActivity.class);
+
+                //Activity 시작하기
+                startActivity(intent);
+
+
+
             }
         });
 
