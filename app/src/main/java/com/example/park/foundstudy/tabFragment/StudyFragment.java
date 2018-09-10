@@ -23,7 +23,12 @@ public class StudyFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.fragment_study, container, false);
+        View  view = inflater.inflate(R.layout.fragment_study, container, false);
+
+
+        // 여기 안에서 구현을 해줘야함.
+
+        return view;
     }
 
 }

@@ -23,10 +23,17 @@ public class ChatFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
-        View view = inflater.inflate(R.layout.fragment_chat, container, false);
+        View  view = inflater.inflate(R.layout.fragment_chat, container, false);
+
+
+
+        // 여기 안에서 구현을 해줘야함.
+
+
+
+
+
 
         return view;
     }
-
 }
