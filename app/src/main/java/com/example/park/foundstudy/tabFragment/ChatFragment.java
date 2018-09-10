@@ -39,7 +39,6 @@ public class ChatFragment extends Fragment {
                 Toast.makeText(a, "버튼 클릭하였습니다.", Toast.LENGTH_SHORT).show();
             }
         });
-        // Test Code /////
 
 
         // 여기 안에서 구현을 해줘야함.
