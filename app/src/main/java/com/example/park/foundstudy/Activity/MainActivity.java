@@ -5,7 +5,6 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.TabLayout;
-import android.support.v4.view.PagerAdapter;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
@@ -16,7 +15,6 @@ import android.widget.Toast;
 
 import com.example.park.foundstudy.Adapter.TabPagerAdapter;
 import com.example.park.foundstudy.R;
-import com.example.park.foundstudy.tabFragment.StudyPlusActivity;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -27,6 +25,16 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
+        // 로그인 체크
+        loginCheck();
+
+        // TODO : 최초실행인지 아닌지를 체크 if()
+
+
+        // 로그인정보가 없으면
+        login();
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         System.out.println("dsadfsdf");
@@ -84,6 +92,8 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
+
+
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
 
@@ -100,5 +110,17 @@ public class MainActivity extends AppCompatActivity {
         }
 
         return super.onOptionsItemSelected(item);
+    }
+
+    // 로그인 체크 메서드
+    private void loginCheck() {
+
+
+    }
+
+    // 로그인 실행
+    private void login() {
+        Intent loginIntent = new Intent(this, LoginActivity.class);
+        startActivity(loginIntent);
     }
 }

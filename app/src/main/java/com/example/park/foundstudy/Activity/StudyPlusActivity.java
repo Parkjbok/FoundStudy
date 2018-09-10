@@ -1,4 +1,4 @@
-package com.example.park.foundstudy.tabFragment;
+package com.example.park.foundstudy.Activity;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
