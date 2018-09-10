@@ -1,10 +1,9 @@
 package com.example.park.foundstudy.Activity;
 
-import android.app.Fragment;
+
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.TabLayout;
-import android.support.v4.view.PagerAdapter;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
@@ -20,8 +19,6 @@ public class MainActivity extends AppCompatActivity {
 
     private TabLayout tabLayout;
     private ViewPager viewPager;
-    private Fragment f;
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -66,7 +63,7 @@ public class MainActivity extends AppCompatActivity {
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(MainActivity.this, "수진아 사랑해!!!!!", Toast.LENGTH_SHORT).show();
+                Toast.makeText(MainActivity.this, "수진아 사랑해!!!!!!", Toast.LENGTH_SHORT).show();
             }
         });
 
