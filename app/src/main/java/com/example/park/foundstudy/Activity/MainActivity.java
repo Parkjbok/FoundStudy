@@ -1,8 +1,10 @@
 package com.example.park.foundstudy.Activity;
 
+import android.app.Fragment;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.TabLayout;
+import android.support.v4.view.PagerAdapter;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
@@ -18,22 +20,30 @@ public class MainActivity extends AppCompatActivity {
 
     private TabLayout tabLayout;
     private ViewPager viewPager;
+    private Fragment f;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
+        System.out.println("dsadfsdf");
         // 상단 바
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
         // 탭 레이아웃
         tabLayout = findViewById(R.id.tabLayout);
+
+        // 탭 레이아웃에 탭 추가
+        tabLayout.addTab(tabLayout.newTab().setText("스터디구하기"));
+        tabLayout.addTab(tabLayout.newTab().setText("채팅"));
+        tabLayout.addTab(tabLayout.newTab().setText("환경설정"));
+
         // viewPager
         viewPager = findViewById(R.id.viewPager);
 
-        // Adapter
+        // TabPagerAdapter - > 프래그먼트 매니저와 탭의 갯수를 생성
         TabPagerAdapter pagerAdapter = new TabPagerAdapter(getSupportFragmentManager(), tabLayout.getTabCount());
 
         viewPager.setAdapter(pagerAdapter);
@@ -49,7 +59,6 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onTabReselected(TabLayout.Tab tab) {}
         });
-
 
 
         // 스터디 만들기 버튼
